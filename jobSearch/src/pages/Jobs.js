@@ -3,11 +3,14 @@ import {SafeAreaView, View, Text} from 'react-native';
 
 
 
-const jobs = () => {
+const jobs = (props) => {
+    
+    const {selectLanguage} = props.route.params;
+
     return (
         <SafeAreaView>
             <View>  
-                <Text>JOBS</Text>
+                <Text>{selectLanguage}</Text>
             </View>
         </SafeAreaView>
     )
